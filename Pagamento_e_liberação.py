@@ -16,12 +16,12 @@ if planos == 'B':
 
     if pagar == 'P':
         pag = True
-        app = False
+        app = True
         if pag == True:
-            print('Pagamento concluido')
+            print()
         if pag == True and app == True:
-            conta = - plano_b
-            email = 'O seu Pagamento Foi concluido com sucesso.\nApp foi liberado.\nO valor que resta em sua conta é de {conta}'
+            conta -= plano_b
+            email = f'O seu Pagamento Foi concluido com sucesso.\nApp foi liberado.\nO valor que resta em sua conta é de {conta}'
             print(f'{email}')
             webbrowser.open(url_site)
     elif pagar != 'P':
@@ -33,10 +33,10 @@ elif planos == 'P':
         pag = True
         app = True
         if pag == True:
-            print('Pagamento concluido')
+            print()
         if pag == True and app == True:
-            conta = - plano_p
-            email = 'O seu Pagamento Foi concluido com sucesso.\nApp foi liberado.\nO valor que resta em sua conta é de {conta}'
+            conta -= plano_p
+            email = f'O seu Pagamento Foi concluido com sucesso.\nApp foi liberado.\nO valor que resta em sua conta é de {conta}'
             print(f'{email}')
             webbrowser.open(url_site)
     elif pagar != 'P':
@@ -46,13 +46,14 @@ elif planos == 'G':
 
     if pagar == 'P':
         pag = True
-        app = False
+        app = True
         if pag == True:
-            print('Pagamento concluido')
+            print()
         if pag == True and app == True:
-            conta = - plano_g
-            email = 'O seu Pagamento Foi concluido com sucesso.\nApp foi liberado.\nO valor que resta em sua conta é de {conta}'
+            conta -= plano_g
+            email = f'O seu Pagamento Foi concluido com sucesso.\nApp foi liberado.\nO valor que resta em sua conta é de {conta}'
             print(f'{email}')
             webbrowser.open(url_site)
     elif pagar != 'P':
         print('Faça o pagamento')
+
