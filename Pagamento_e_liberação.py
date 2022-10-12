@@ -1,16 +1,10 @@
 import webbrowser
 
 url_site = 'https://github.com/luisgabriel1'
-conta = 1000
-plano_b = 200
-plano_p = 400
-plano_g = 600
-email = ''
-app = False
-pag = False
+conta, plano_b, plano_p, plano_g, email, app, pag = 1000 , 200 , 400 , 600 , '', False , False
+
 print('Qual plano você deseja ')
-planos = input(
-    'Para Bronze envie: B\nPra Prata envie: P\nPara Gold envie: G\n').upper()
+planos = input('Para Bronze envie: B\nPra Prata envie: P\nPara Gold envie: G\n').upper()
 if planos == 'B':
     pagar = input('Envie P, para liberar o app:  ').upper()
 
